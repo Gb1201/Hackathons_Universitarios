@@ -36,11 +36,15 @@ public class Main {
 
 
         // CRIAÇÃO DOS PROJETOS
-        Projeto projeto1 = new Projeto("Sistema de Gestão Acadêmica", orientador1, equipe1, 79.00);
-        Projeto projeto2 = new Projeto("Aplicativo de Saúde", orientador2, equipe2, 59.00);
+        Projeto projeto1 = new Projeto("Sistema de Gestão Acadêmica", orientador1, equipe1, 0);
+        Projeto projeto2 = new Projeto("Aplicativo de Saúde", orientador2, equipe2, 0);
+        Projeto projeto3 = new Projeto("Plataforma de E-commerce", orientador1, equipe1, 0);
+        Projeto projeto4 = new Projeto("Sistema de Monitoramento Ambiental", orientador2, equipe2, 0);
+        Projeto projeto5 = new Projeto("Aplicativo de Educação", orientador1, equipe1, 0);
 
 
-        //criação dos jurados
+
+
 
         // CRIAÇÃO DOS JURADOS
         Jurado jurado1 = new Jurado("Carlos", "111.222.333-44", "carlos@empresa.com", "(31) 99999-0001", pucMinas, "Desenvolvedor Sênior", "TI", "Java");
@@ -59,12 +63,50 @@ public class Main {
 
         Banca banca1 = new Banca(projeto1, notasBanca1);
 
+        Map<Jurado, Integer> notasBanca2 = new HashMap<>();
+        notasBanca2.put(jurado1, 6);
+        notasBanca2.put(jurado2, 7);
+        notasBanca2.put(jurado3, 8);
+        notasBanca2.put(jurado4, 6);
+
+        Banca banca2 = new Banca(projeto2, notasBanca2);
+
+        Map<Jurado, Integer> notasBanca3 = new HashMap<>();
+        notasBanca3.put(jurado1, 7);
+        notasBanca3.put(jurado2, 8);
+        notasBanca3.put(jurado3, 6);
+        notasBanca3.put(jurado4, 7);
+        Banca banca3 = new Banca(projeto3, notasBanca3);
+
+        Map<Jurado, Integer> notasBanca4 = new HashMap<>();
+        notasBanca4.put(jurado1, 9);
+        notasBanca4.put(jurado2, 9);
+        notasBanca4.put(jurado3, 8);
+        notasBanca4.put(jurado4, 10);
+        Banca banca4 = new Banca(projeto4, notasBanca4);
+
+        Map<Jurado, Integer> notasBanca5 = new HashMap<>();
+        notasBanca5.put(jurado1, 6);
+        notasBanca5.put(jurado2, 7);
+        notasBanca5.put(jurado3, 7);
+        notasBanca5.put(jurado4, 8);
+        Banca banca5 = new Banca(projeto5, notasBanca5);
+
+
 
         // CRIAÇÃO DAS APRESENTAÇÕES
         Apresentacao apresentacao1 = new Apresentacao(projeto1, banca1, new Sala("Lab 01", 20), LocalDateTime.of(2025, 6, 20, 10, 0));
+        Apresentacao apresentacao2 = new Apresentacao(projeto2, banca2, new Sala("Lab 02", 15), LocalDateTime.of(2025, 6, 20, 14, 0));
+        Apresentacao apresentacao3 = new Apresentacao(projeto3, banca3, new Sala("Lab 03", 25), LocalDateTime.of(2025, 6, 21, 9, 0));
+        Apresentacao apresentacao4 = new Apresentacao(projeto4, banca4, new Sala("Lab 04", 30), LocalDateTime.of(2025, 6, 21, 14, 0));
+        Apresentacao apresentacao5 = new Apresentacao(projeto5, banca5, new Sala("Lab 05", 20), LocalDateTime.of(2025, 6, 22, 10, 0));
 
-        // AVALIAR PROJETOS ATRAVÉS DA APRESENTAÇÃO 
-        apresentacao1.avaliar(0); // nota será ignorada pela banca
+        // nota será ignorada pela banca
+        apresentacao1.avaliar(0); 
+        apresentacao2.avaliar(0);
+        apresentacao3.avaliar(0);
+        apresentacao4.avaliar(0);
+        apresentacao5.avaliar(0);
 
         // LISTAR PROJETOS COM NOTA FINAL >= 7
         List<Projeto> todosProjetos = Arrays.asList(projeto1, projeto2);

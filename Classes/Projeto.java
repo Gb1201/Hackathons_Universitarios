@@ -4,14 +4,13 @@ public class Projeto {
     private String tema;
     private Profissional orientador; // quem orienta a equipe
     private Equipe equipe;           // equipe responsável pelo projeto
-    private double notaFinal;
+    private double notaInicial;
 
-
-    public Projeto(String tema, Profissional orientador, Equipe equipe, double notaFinal) {
+    public Projeto(String tema, Profissional orientador, Equipe equipe, double notaInicial) {
         this.tema = tema;
         this.orientador = orientador;
         this.equipe = equipe;
-        this.notaFinal = notaFinal;
+        this.notaInicial = notaInicial;
     }
 
 
@@ -31,12 +30,12 @@ public class Projeto {
 
 
     public double getNotaFinal() {
-        return notaFinal;
+        return notaInicial;
     }
 
 
     public void setNotaFinal(int notaFinal) {
-        this.notaFinal = notaFinal;
+        this.notaInicial = notaFinal;
     }
 
     
