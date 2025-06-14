@@ -21,10 +21,20 @@ O foco inicial está na modelagem de **Projetos**, **Equipes** e suas relações
 
 > O diagrama UML completo deve ser implementado seguindo esta estrutura básica:
 
-- `Aluno`
-- `Equipe`
+- `Instituição`
+- `Universidade`
+- `Tipo`
+- `Empresa`
+- `Pessoa`
+- `Estudante`
+- `Profissional`
+- `Jurado`
+- `Apresentação`
 - `Projeto`
-- `Apresentacao`
+- `Equipe`
+- `Sala`
+- `Banca`
+- `Avaliavel`
 - **Coleções Singleton**  
   - `Equipes` – mantém _uma única_ lista de `Equipe`  
   - `Apresentacoes` – mantém _uma única_ lista de `Apresentacao`
