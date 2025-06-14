@@ -38,7 +38,6 @@ public class Apresentacao {
     
     public void avaliar (int nota){
         banca.avaliar(projeto, nota);
-        projeto.setNotaFinal(nota);
 
     }
 

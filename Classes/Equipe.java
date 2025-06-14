@@ -6,7 +6,7 @@ public class Equipe {
     private List<Estudante> membros;
 
 
-    public Equipe(String nome, String temaProjeto, List<Estudante> membros) {
+    public Equipe(String nome,List<Estudante> membros) {
         this.nome = nome;
         this.membros = membros;
     }

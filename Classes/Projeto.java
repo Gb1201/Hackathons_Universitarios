@@ -4,10 +4,10 @@ public class Projeto {
     private String tema;
     private Profissional orientador; // quem orienta a equipe
     private Equipe equipe;           // equipe responsável pelo projeto
-    private int notaFinal;
+    private double notaFinal;
 
 
-    public Projeto(String tema, Profissional orientador, Equipe equipe, int notaFinal) {
+    public Projeto(String tema, Profissional orientador, Equipe equipe, double notaFinal) {
         this.tema = tema;
         this.orientador = orientador;
         this.equipe = equipe;
@@ -30,7 +30,7 @@ public class Projeto {
     }
 
 
-    public int getNotaFinal() {
+    public double getNotaFinal() {
         return notaFinal;
     }
 

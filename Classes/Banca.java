@@ -45,8 +45,8 @@ public class Banca implements Avaliavel {
             soma += nota;
         }
 
-        int media = soma / jurados.size(); // média inteira
-        projetoAvaliado.setNotaFinal(media);
+        double media = (double) soma / jurados.size(); // média inteira
+        projetoAvaliado.setNotaFinal((int) Math.round(media)); // atualiza a nota 
     }
     
 }
