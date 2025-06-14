@@ -1,6 +1,6 @@
 # Sistema de Gerenciamento de Hackathon Universitário
 
-Este repositório contém a **prova de conceito** para um sistema que gerencia as equipes e projetos de um Hackathon Universitário anual, envolvendo universidades parceiras.  
+Este repositório contém a **Trabalho Avaliativo** para um sistema que gerencia as equipes e projetos de um Hackathon Universitário anual, envolvendo universidades parceiras.  
 O foco inicial está na modelagem de **Projetos**, **Equipes** e suas relações, além do cálculo das notas atribuídas pelos jurados.
 
 ---
