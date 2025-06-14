@@ -29,10 +29,5 @@ O foco inicial está na modelagem de **Projetos**, **Equipes** e suas relações
   - `Equipes` – mantém _uma única_ lista de `Equipe`  
   - `Apresentacoes` – mantém _uma única_ lista de `Apresentacao`
 
-Cada classe de coleção **segue o padrão _Singleton_**, garantindo uma única instância acessível em todo o sistema e fornecendo métodos para:
-
-```java
-void adicionar(T elemento);
-Optional<T> buscar(Predicate<T> criterio);
-List<T> listar();
+Cada classe de coleção **segue o padrão _Singleton_**, garantindo uma única instância acessível em todo o sistema e fornecendo métodos para.
 
